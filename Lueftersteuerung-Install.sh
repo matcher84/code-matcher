@@ -51,7 +51,7 @@ chmod +x Lueftersteuerung.py
 
 sudo -u pi crontab -l >> /tmp/pi_crontab.txt
 
-echo "@reboot python3 /home/pi/Lueftersteuerung.py" >> /tmp/pi_crontab.txt
+echo "@reboot python3 /home/pi/Lueftersteuerung.py" >> /tmp/pi_crontab.txt #pi muss angepasst an ihren Benutzernamen sein
 
 sudo -u pi crontab -i /tmp/pi_crontab.txt
 
